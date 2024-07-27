@@ -1,9 +1,14 @@
 # Project files
 node_modules/
+**/__pycache__/
 
 # Build output
 .scannerwork/
-coverage/*
 
 # Log
 log/*
+
+# Coverage
+.coverage
+coverage.xml
+nosetests.xml
