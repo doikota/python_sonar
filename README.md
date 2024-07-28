@@ -25,7 +25,6 @@ pynose -V
 pynose version 1.5.2
 nosetests -V
 nosetests version 1.5.2
-pip install pylint
 ```
 
 ### nosetestsの実行
