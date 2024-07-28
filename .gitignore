@@ -12,3 +12,4 @@ log/*
 .coverage
 coverage.xml
 nosetests.xml
+pylint-result.txt

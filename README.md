@@ -25,9 +25,20 @@ pynose -V
 pynose version 1.5.2
 nosetests -V
 nosetests version 1.5.2
+pip install pylint
 ```
 
 ### nosetestsの実行
 ```
 nosetests --with-xunit tests.test_mymodule
+```
+
+###　pylintをインストール
+```
+pip install pylint
+```
+
+### pylintの実行
+```
+pylint mypackage -r n --msg-template="{path}:{line}: [{msg?id}({symbol}) ,{obj}] {msg} " > ./pylint-result.txt
 ```
