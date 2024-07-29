@@ -27,9 +27,10 @@ nosetests -V
 nosetests version 1.5.2
 ```
 
-### nosetestsの実行
+### nosetests/pynoseの実行
 ```
 nosetests --with-xunit tests.test_mymodule
+pynose --with-xunit tests.test_mymodule
 ```
 
 ###　pylintをインストール
@@ -40,4 +41,15 @@ pip install pylint
 ### pylintの実行
 ```
 pylint mypackage -r n --msg-template="{path}:{line}: [{msg?id}({symbol}) ,{obj}] {msg} " > ./pylint-result.txt
+```
+
+### SonarLintの適用
+C:\Users\<user>\AppData\Roaming\Code\User\settings.jsonに以下を追記
+```
+  "sonarlint.connectedMode.connections.sonarqube": [
+    {
+      "serverUrl": "http://localhost:9000",
+      "token": "<your token>",
+    }
+  ]
 ```
